@@ -18,6 +18,7 @@ public class OrderBusinessImpl {
   @Autowired
   private UserDetailsBusinessImpl userDetailsBusiness;
 
+
   private void orderBook(final Long bookId, final Long quantity){
     // 1. Check the inventory
     Long availableQuantity = invenetoryBusiness.getAvailableQuantity(bookId);
